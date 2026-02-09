@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandapati Siri Chandana | Portfolio</title>
+    <style>
+        /* CSS Variables for Corporate Palette */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #2980b9;
+            --bg: #ffffff;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --border: #e0e0e0;
+            --section-bg: #f8f9fa;
+        }
+
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg);
+            padding-top: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Typography */
+        h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 5px; }
+        h2 { font-size: 1.4rem; color: var(--secondary); border-bottom: 2px solid var(--border); padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 5px; }
+        p { margin-bottom: 10px; }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .contact-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent);
+            border-bottom: 1px solid var(--accent);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Summary */
+        .summary-text {
+            font-style: italic;
+            color: var(--secondary);
+            font-size: 1.05rem;
+        }
+
+        /* Grid Layout for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: var(--section-bg);
+            padding: 8px 15px;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent);
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        /* Experience & Projects Styling */
+        .item-row {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .item-date {
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .item-desc {
+            list-style-type: none;
+        }
+
+        .item-desc li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .item-desc li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .tags {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 12px;
+            color: var(--secondary);
+        }
+
+        /* Education Table */
+        .edu-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .edu-table td {
+            padding: 10px 0;
+            vertical-align: top;
+        }
+
+        .edu-info { width: 70%; }
+        .edu-meta { width: 30%; text-align: right; color: var(--text-light); font-size: 0.85rem; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.8rem;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 600px) {
+            .item-header { flex-direction: column; }
+            .edu-table td { display: block; width: 100%; text-align: left; }
+            .edu-meta { text-align: left; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Mandapati Siri Chandana</h1>
+            <p class="subtitle">Computer Science Engineering (Data Science)</p>
+            <div class="contact-links">
+                <span>📍 Guntur</span>
+                <a href="mailto:mandapatisirichandana@gmail.com">mandapatisirichandana@gmail.com</a>
+                <span>📞 8919546764</span>
+                <a href="https://linkedin.com/in/mandapati-sirichandana-175b8a367" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Siri293" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Profile Summary -->
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Pursuing Computer Science Engineering (Data Science) with a strong analytical mindset. Interested in AI, Data Analytics, Machine Learning, and problem-solving. Seeking opportunities to apply technical skills in real-world projects and contribute to impactful solutions.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technologies & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C Programming</div>
+                <div class="skill-item">Data Science (Numpy, Pandas)</div>
+                <div class="skill-item">Machine Learning (Tensorflow)</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Streamlit</div>
+                <div class="skill-item">Microsoft Excel</div>
+                <div class="skill-item">HuggingFace</div>
+                <div class="skill-item">Power BI</div>
+                <div class="skill-item">SQLite</div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="item-row">
+                <div class="item-header">
+                    <h3>Project Based Intern | AICTE, IBM</h3>
+                    <span class="item-date">Sept 2025 - Oct 2025</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Built an end-to-end AI system converting lecture audio into structured notes using Faster-Whisper ASR and Google Gemini API.</li>
+                    <li>Developed and deployed an interactive frontend using Streamlit for instant study material generation.</li>
+                    <li>Optimized transcription accuracy and response time to enhance user experience.</li>
+                </ul>
+            </div>
+
+            <div class="item-row">
+                <div class="item-header">
+                    <h3>Data Analytics Intern | Power BI, Microsoft</h3>
+                    <span class="item-date">2026 Jan</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Designed interactive dashboards and reports using Power BI.</li>
+                    <li>Analyzed structured datasets to identify trends and actionable insights.</li>
+                    <li>Strengthened data interpretation skills with a focus on business analytics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Selected Projects</h2>
+
+            <div class="item-row">
+                <div class="item-header">
+                    <h3>Smart Campus Lost and Found</h3>
+                    <span class="item-date">2026</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Developed a web-based tool to efficiently report lost items and register found items, utilizing AI-based NLP for item matching.</li>
+                    <li>Tools: Python, Streamlit, SQLite, RapidFuzz.</li>
+                </ul>
+            </div>
+
+            <div class="item-row">
+                <div class="item-header">
+                    <h3>Real-Time Chat System</h3>
+                    <span class="item-date">2025</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Developed a containerized real-time messaging system enabling multi-user communication with scalable deployment.</li>
+                    <li>Tools: Docker, Node.js, Redis.</li>
+                </ul>
+            </div>
+
+            <div class="item-row">
+                <div class="item-header">
+                    <h3>Employee Analytics Dashboard</h3>
+                    <span class="item-date">2025</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Built an interactive dashboard using Excel (PivotTables, KPI cards) to clean and summarize employee data for business insights.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <table class="edu-table">
+                <tr>
+                    <td class="edu-info">
+                        <h3>Vignan's Lara Institute of Technology and Science</h3>
+                        <p>B.Tech in Data Science (Computer Science)</p>
+                        <p><strong>CGPA: 9.0 / 10.0</strong></p>
+                    </td>
+                    <td class="edu-meta">
+                        June 2024 - Ongoing (2nd Year)
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul class="item-desc">
+                <li><strong>IBM:</strong> Artificial Intelligence Fundamentals</li>
+                <li><strong>Infosys:</strong> Introduction to Python</li>
+                <li><strong>Google:</strong> Hands-on practice on DATA (Data Science)</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="text-align: center;">
+            <h2>Get In Touch</h2>
+            <p>I am currently seeking opportunities in AI, Data Science, and Machine Learning.</p>
+            <br>
+            <a href="mailto:mandapatisirichandana@gmail.com" style="display: inline-block; background: var(--accent); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: 600;">Email Me</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Mandapati Siri Chandana. Built for professional recruitment.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple smooth scroll or interaction logic could be added here
+        // No external frameworks used as per requirements.
+        console.log("Portfolio loaded successfully.");
+    </script>
+</body>
+</html>
